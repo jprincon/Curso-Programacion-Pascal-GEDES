@@ -1,0 +1,577 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{book}
+#Declaracion de la clase CartillasGEDES.layout
+#Autor: Julián Andrés Rincón Penagos <jarincon@uniquindio.edu.co>
+
+Format 35
+
+Input stdfloats.inc
+Input stdcounters.inc
+Input stdinsets.inc
+Input stdlists.inc
+Input stdstruct.inc
+Input stdlayouts.inc
+Input stdciteformats.inc
+
+Columns                 1
+Sides                   1
+SecNumDepth             2
+TocDepth                2
+DefaultStyle            Standard
+
+DefaultFont
+	Family                Roman
+	Series                Medium
+	Shape                 Up
+	Size                  Normal
+	Color                 None
+EndFont
+
+Counter section
+	PrettyFormat         "Section ##"
+End
+
+
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Block
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+
+Style Chapter
+	Margin                First_Dynamic
+	Category              Section
+	LabelString           "Capitulo \thechapter "
+	LabelStringAppendix   "Appendix \thechapter  "
+	LabelType             Counter
+	LabelCounter          chapter
+	TocLevel              1
+	LatexType             Command
+	LatexName             chapter
+	NeedProtect           1
+	NextNoIndent          1
+	ParSkip               0.4
+	TopSep                4
+	BottomSep             0.8
+	ParSep                2.8
+	LabelSep              xx
+	Align                 Block
+	OptionalArgs          1
+	CommandDepth          0
+	
+	Font
+	  Series              Bold
+	  Size                huge
+	EndFont
+	
+	LabelFont 
+    Color               blue
+	Series              Bold
+	Size                huge
+	EndFont
+	
+	HTMLTag               h2
+End
+
+Style Chapter*
+	CopyStyle			  Chapter
+	Margin                Static
+	Category              Section*
+	LabelType             No_Label
+	LatexName             chapter*
+	OptionalArgs          0
+End
+
+###################################################
+# Definición del encabezadoB
+Style Section
+	Margin                First_Dynamic
+	Category              Section
+	LabelString           "Seccion \thesection : "
+	LabelStringAppendix   "Seccion \thesection : "
+	LabelType             Counter
+	LabelCounter          section
+	TocLevel              1
+	LatexType             Command
+	LatexName             section
+	NeedProtect           1
+	NextNoIndent          1
+	ParSkip               0.4
+	TopSep                4
+	BottomSep             0.8
+	ParSep                2.8
+	LabelSep              xx
+	Align                 Block
+	OptionalArgs          1
+	CommandDepth          0
+	
+	Font
+	  Series              Bold
+	  Size                huge
+	EndFont
+	
+	LabelFont 
+    Color               blue
+	Series              Bold
+	Size                huge
+	EndFont
+	
+	HTMLTag               h2
+End
+
+Style Section*
+	CopyStyle			  Section
+	Margin                Static
+	Category              Section*
+	LabelType             No_Label
+	LatexName             section*
+	OptionalArgs          0
+End
+
+#####################################################
+
+###################################################
+# Definición del encabezadoC
+Style Subsection
+	Margin                First_Dynamic
+	Category              Section
+	LabelString           "Subseccion \thesubsection : "
+	LabelStringAppendix   "Subseccion \thesubsection : "
+	LabelType             Counter
+	LabelCounter          subsection
+	TocLevel              2
+	LatexType             Command
+	LatexName             subsection
+	NeedProtect           1
+	NextNoIndent          1
+	ParSkip               0.4
+	TopSep                4
+	BottomSep             0.8
+	ParSep                2.8
+	LabelSep              xx
+	Align                 Left
+	OptionalArgs          1
+	CommandDepth          0
+	Font
+	  Series              Bold
+	  Size                LARGE
+	EndFont
+	
+	LabelFont 
+		Color          blue
+		Series         Bold
+		Size           LARGE
+	EndFont
+	
+	HTMLTag               h3
+End
+
+Style Subsection*
+	CopyStyle			  Subsection
+	Margin                Static
+	Category              Section*
+	LabelType             No_Label
+	LatexName             subsection*
+	OptionalArgs          0
+End
+
+# Definición del encabezadoD
+Style Subsubsection
+	Margin                First_Dynamic
+	Category              Section
+	LabelString           "Subsubseccion \thesubsubsection : "
+	LabelStringAppendix   "Subsubseccion \thesubsubsection : "
+	LabelType             Counter
+	LabelCounter          subsubsection
+	TocLevel              3
+	LatexType             Command
+	LatexName             subsubsection
+	NeedProtect           1
+	NextNoIndent          1
+	ParSkip               0.4
+	TopSep                4
+	BottomSep             0.8
+	ParSep                2.8
+	LabelSep              xx
+	Align                 Left
+	OptionalArgs          1
+	CommandDepth          0
+	
+	Font
+	  Series              Bold
+	  Size                Large
+	EndFont
+	
+	LabelFont 
+		Color          blue
+		Series         Bold
+		Size           Large
+	EndFont
+	
+	HTMLTag               h4
+End
+
+Style Subsubsection*
+	CopyStyle			  Subsubsection
+	Margin                Static
+	Category              Section*
+	LabelType             No_Label
+	LatexName             subsubsection*
+	OptionalArgs          0
+End
+#####################################################
+
+# Definición del encabezadoE
+Style Paragraph
+	Margin                First_Dynamic
+	Category              Section
+	LabelString           "Parrafo \theparagraph : "
+	LabelStringAppendix   "Parrafo \theparagraph : "
+	LabelType             Counter
+	LabelCounter          paragraph
+	TocLevel              4
+	LatexType             Command
+	LatexName             paragraph
+	NeedProtect           1
+	NextNoIndent          1
+	ParSkip               0.4
+	TopSep                4
+	BottomSep             0.8
+	ParSep                2.8
+	LabelSep              xx
+	Align                 Left
+	OptionalArgs          1
+	CommandDepth          0
+	
+	Font
+	  Series              Bold
+	  Size                Normal
+	EndFont
+	
+	LabelFont 
+		Color          blue
+		Series         Bold
+		Size           Normal
+	EndFont
+	
+	HTMLTag               h5
+End
+
+Style Paragraph*
+	CopyStyle			  Paragraph
+	Margin                Static
+	Category              Section*
+	LabelType             No_Label
+	LatexName             paragraph*
+	OptionalArgs          0
+End
+
+##############################################
+
+# Definición del encabezadoF
+Style SubParagraph
+	Margin                First_Dynamic
+	Category              Section
+	LabelString           "Subparrafo \thesubparagraph : "
+	LabelStringAppendix   "Subparrafo \thesubparagraph : "
+	LabelType             Counter
+	LabelCounter          subparagraph
+	TocLevel              5
+	LatexType             Command
+	LatexName             subparagraph
+	NeedProtect           1
+	NextNoIndent          1
+	ParSkip               0.4
+	TopSep                4
+	BottomSep             0.8
+	ParSep                2.8
+	LabelSep              xx
+	Align                 Left
+	OptionalArgs          1
+	CommandDepth          0
+	
+	Font
+	  Series              Bold
+	  Size                Large
+	EndFont
+	
+	LabelFont 
+		Color          blue
+		Series         Bold
+		Size           Normal
+	EndFont
+	
+	HTMLTag               h6
+End
+
+Style SubParagraph*
+	CopyStyle			  SubParagraph
+	Margin                Static
+	Category              Section*
+	LabelType             No_Label
+	LatexName             subparagraph*
+	OptionalArgs          0
+End
+
+
+#########################################################
+#Definicion del titulo, autores, institución ciudad y año
+
+Style Universidad
+  Category         Datos
+  Margin           First_Dynamic
+  LatexType        Command
+  NextNoIndent     0
+  ParIndent        MM
+  Align            Left
+  LabelType        Static
+  LabelSep         xx
+
+  LatexName        Universidad
+  LabelString      "Universidad: "
+
+  Font       
+	Family         Roman
+	Size		   large
+  EndFont
+
+  LabelFont 
+    Family         Roman
+	Series         Bold
+    Color          red
+	Size		   large
+  EndFont
+End
+
+Style Facultad
+  Category         Datos
+  Margin           First_Dynamic
+  LatexType        Command
+  NextNoIndent     0
+  ParIndent        MM
+  Align            Left
+  LabelType        Static
+  LabelSep         xx
+
+  LatexName        Facultad
+  LabelString      "Facultad: "
+
+  Font       
+	Family         Roman
+	Size		   huge
+  EndFont
+
+  LabelFont 
+    Family         Roman
+	Series         Bold
+    Color          red
+	Size		   Huge
+  EndFont
+End
+
+Style Programa
+  Category         Datos
+  Margin           First_Dynamic
+  LatexType        Command
+  NextNoIndent     0
+  ParIndent        MM
+  Align            Left
+  LabelType        Static
+  LabelSep         xx
+
+  LatexName        Programa
+  LabelString      "Programa: "
+
+  Font       
+	Family         Roman
+	Size		   huge
+  EndFont
+
+  LabelFont 
+    Family         Roman
+	Series         Bold
+    Color          red
+	Size		   Huge
+  EndFont
+End
+
+Style Materia
+  Category         Datos
+  Margin           First_Dynamic
+  LatexType        Command
+  NextNoIndent     0
+  ParIndent        MM
+  Align            Left
+  LabelType        Static
+  LabelSep         xx
+
+  LatexName        Materia
+  LabelString      "Materia: "
+
+  Font       
+	Family         Roman
+	Size		   huge
+  EndFont
+
+  LabelFont 
+    Family         Roman
+	Series         Bold
+    Color          red
+	Size		   Huge
+  EndFont
+End
+
+Style Logo
+  Category         DatosLibro
+  Margin           First_Dynamic
+  LatexType        Command
+  NextNoIndent     0
+  ParIndent        MM
+  Align            Left
+  LabelType        Static
+  LabelSep         xx
+
+  LatexName        Logo
+  LabelString      "Logo: "
+
+  Font       
+	Family         Roman
+	Size		   huge
+  EndFont
+
+  LabelFont 
+    Family         Roman
+	Series         Bold
+    Color          red
+	Size		   Huge
+  EndFont
+End
+
+Style Fecha
+  Category         Datos
+  Margin           First_Dynamic
+  LatexType        Command
+  NextNoIndent     0
+  ParIndent        MM
+  Align            Left
+  LabelType        Static
+  LabelSep         xx
+
+  LatexName        Fecha
+  LabelString      "Fecha: "
+
+  Font       
+	Family         Roman
+	Size		   huge
+  EndFont
+
+  LabelFont 
+    Family         Roman
+	Series         Bold
+    Color          red
+	Size		   Huge
+  EndFont
+End
+
+Style Docente
+  Category         Datos
+  Margin           First_Dynamic
+  LatexType        Command
+  NextNoIndent     0
+  ParIndent        MM
+  Align            Left
+  LabelType        Static
+  LabelSep         xx
+
+  LatexName        Docente
+  LabelString      "Docente: "
+
+  Font       
+	Family         Roman
+	Size		   huge
+  EndFont
+
+  LabelFont 
+    Family         Roman
+	Series         Bold
+    Color          red
+	Size		   Huge
+  EndFont
+End
+
+#generar la portada
+Style GenerarPortada
+	Category              Generar
+	KeepEmpty             1
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             GenerarPortada
+	ParIndent             MM
+	ParSkip               1
+	TopSep                2
+	BottomSep             2
+	ParSep                1
+	Align                 Center
+	LabelType             Static
+	LabelString           "--- Generar la Portada ---"
+	LabelFont
+	  Family              Roman
+	  Series              Medium
+	  Size                huge
+	  Color               Blue
+	EndFont
+	HTMLLabel             NONE
+End
+
+
+Style Bibliography
+	Category              Referencias
+	TopSep                4
+	LabelString           "Bibliografia"
+	LabelFont
+	  Series              Bold
+	  Size                Huge
+	EndFont
+End
+
+#Categoria A: Para Matematicas y otros
+Style Puntos
+	Category              Datos
+	KeepEmpty             1
+	Margin                Dynamic
+	LatexType             Command
+	LatexName             Puntos
+	ParIndent             MM
+	ParSkip               1
+	TopSep                2
+	BottomSep             2
+	ParSep                1
+	LabelSep              xx
+	Align                 Left
+	Argument 1
+	  Mandatory	1
+	  LabelString	"Valor"
+	  Tooltip	"Escriba aqui el puntaje para este ejercicio."
+	EndArgument
+	LabelType             Dynamic
+	LabelString           "Puntaje "
+	LabelFont
+	  Family              Roman
+	  Series              Bold
+	  Size                normal
+	  Color               blue
+	EndFont
+	HTMLLabel             NONE
+End

@@ -1,0 +1,1202 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass Plantilla
+\begin_preamble
+\usepackage{Plantilla}
+\end_preamble
+\use_default_options true
+\begin_modules
+multicol
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 18.2cm
+\paperheight 32.5cm
+\leftmargin 3cm
+\topmargin 5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 5
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\bullet 0 2 1 -1
+\bullet 1 2 14 -1
+\bullet 2 2 16 -1
+\bullet 3 2 34 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 3
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Universidad
+Universidad del Quindío
+\end_layout
+
+\begin_layout Facultad
+Facultad de Ciencias de la Educación
+\end_layout
+
+\begin_layout Programa
+Grupo de Estudio y Desarrollo de Software
+\end_layout
+
+\begin_layout Materia
+Programación en Pascal
+\end_layout
+
+\begin_layout Docente
+Julián Andrés Rincón Penagos & Jorge Mario Garcia Usuga
+\end_layout
+
+\begin_layout Fecha
+Mayo de 2022
+\end_layout
+
+\begin_layout Chapter
+Historia de la Programación
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "Historia_de_la_Programacion.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introducción
+\end_layout
+
+\begin_layout Section
+Instalación de Lazarus Project Free Pascal
+\end_layout
+
+\begin_layout Standard
+Para descargar el IDE puede acceder a través del siguiente link: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2032%20bits/Laza
+rus%202.2.0/lazarus-2.2.0-fpc-3.2.2-win32.exe/download
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+, este le descargará una aplicación que pesa aproximadamente 170 mb.
+ Una vez descargada procedemos a su instalación haciendo doble clic sobre
+ el ejecutable sobre el cual se mostrará la siguiente ventana.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Lazarus_001.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ventana de instalación del IDE de desarrollo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic en [Siguiente], y se mostrará la ventana donde nos pide la
+ ruta de instalación.
+ Por defecto esta en la raíz del disco duro, la cual podemos dejar por defecto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Lazarus_002.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ruta de instalación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic en [Siguiente], nos preguntará por el tipo de instalación,
+ el cual dejaremos en la opción de [Instalación Completa] 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Lazarus_003.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tipo de Instalación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic en [Siguiente], y nos preguntará por el nombre del acceso directo,
+ el cual dejaremos por defecto como lo indica el instalador.
+ Sin embargo, usted puede seleccionar una ruta diferente en donde quiere
+ que el instalador cree los accesos directos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Lazarus_004.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accesos directos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic en [Siguiente], y el asistente nos preguntará si queremos crear
+ un acceso directo en el escritorio, opción que puede ser marcada si así
+ lo queremos, pero, este acceso lo podemos encontrar también en el menú
+ inicio en el sistema operativo Windows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Lazarus_005.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+¿Desea crear el acceso directo en el escritorio?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic en [Siguiente] y ya estamos listo para instalar
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Lazarus_006.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Programa listo y configurado para instalar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic en [Instalar] y esperamos al proceso de instalación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Lazarus_007.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Proceso de instalación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic en [Finalizar]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Lazarus_008.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Finalización de la instalación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+El Entorno de Lazarus
+\end_layout
+
+\begin_layout Standard
+Para realizar nuestro primer programa, vamos a buscar la instalación en
+ el menú inicio 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Ejecutando_Lazarus.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Buscando el IDE de Lazarus en el Inicio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic sobre la aplicación [Lazarus], que nos abrirá la siguiente
+ ventana
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Ventana_de_Inicio.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ventana de inicio del IDE de Lazarus
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hacemos clic en [Arrancar IDE], y encontraremos varias ventanas, que vienen
+ por defecto.
+\end_layout
+
+\begin_layout Subsection
+Menú principal
+\end_layout
+
+\begin_layout Standard
+La ventana de menú principal contiene los menús para crear los proyectos,
+ los botones rápidos para crear, abrir, guardar y ejecutar los proyectos,
+ además contiene la pentaña de componentes por medio de la cual podemos
+ diseñar nuestros aplicaciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Menu_Principal.png
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ventana de menú principal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inspector de Objetos
+\end_layout
+
+\begin_layout Standard
+A través del inspector de objetos, podemos cambiar las propiedades de los
+ diferentes elementos del formulario.
+ Es una ventana que muestra las propiedades más importantes de cada elemento
+ del formulario que estamos diseñando y que nos permite cambiarlo rápidamente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Inspector_de_Objetos.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inspector de Objetos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Editor de Código Fuente
+\end_layout
+
+\begin_layout Standard
+El editor de código fuente, es la ventana en donde vamos a programar todo
+ nuestro código.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Editor_de_Codigo.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Editor de Código Fuente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ventana de Mensajes
+\end_layout
+
+\begin_layout Standard
+La ventana de mensajes, se activa cuando ejecutamos el código, y en ella
+ podemos ver los errores de código que tenemos en nuestro programa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Ventana_de_Mensajes.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ventana de mensajes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estas ventanas que hemos visto hasta ahora siempre estan desacopladas o
+ sueltas.
+ A algunos usuarios no les gusta este diseño, y por fortuna Lazarus trae
+ una herramienta que nos permite tener una sola ventana.
+\end_layout
+
+\begin_layout Section
+Unificando las ventanas de Lazarus
+\end_layout
+
+\begin_layout Standard
+Si así lo desea, puede unificar las ventanas del IDE de Lazarus siguiendo
+ estos pasos.
+\end_layout
+
+\begin_layout Enumerate
+Búsque en el menú principal la opción Paquete \SpecialChar menuseparator
+Abrir archivo de paquete (.lpk)
+ como se muestra en la siguiente imagen 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Menu_Paquetes.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accediendo al menú de paquetes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Al hacer clic sobre la opción [Abrir Archivo de Paquete (.lpk) ...] se abrirá
+ una ventana de selección de archivos y carpetas en la cual debemos buscar
+ la siguiente ruta: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+C:
+\backslash
+lazarus
+\backslash
+components
+\backslash
+anchordocking
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Nota: Esto, si no cambiamos la ruta por defecto de instalación de lazarus.
+ Pero si la cambiamos al momento de la instalación, debemos buscar la ruta
+ de instalación que elegimos y seguir las subcarpetas que se muestran 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+...
+\backslash
+lazarus
+\backslash
+components
+\backslash
+anchordocking
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, allí debemos seleccionar el archivo [anchordocking.lpk] tal como se muestra
+ en la imagen y hacer clic en el botón [Abrir]
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Buscando_AnchorDocKing.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Seleccionando el archivo anchordocking.lpk
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Al abrilo veremos la siguiente ventana
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Instalacion_del_Componente.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ventana de instalación del componente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Procedemos a instalar haciendo clic sobre el botón [Usar] y luego en la
+ opción de [Instalar] y [Aceptamos] el mensaje que nos presenta Lazarus
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/AceptandoInstalacion.png
+	width 7cm
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+luego presianamos [Si] en la advertencia de Instalación 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/Advertencia_Instalacion.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+El componente se empezará a instalar, mostrando unos procesos en la ventana
+ de mensajes.
+ En caso de que hallamos hecho algun cambio en algun proyecto que estemos
+ ejecutando, nos preguntará si queremos guardar los cambios, a lo cual responder
+emos que [Si].
+ El IDE se cerrará solo y se abrirá de nuevo, mostrando como lo es habitual
+ en cada inicio la siguiente ventana.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Ventana_de_Inicio.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ventana de inicio del IDE de Lazarus
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+hacemos clic en [Arrancar IDE].
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Repetimos los mismos pasos 2 y 3 pero en esta ocasión debemos buscar el
+ componente [anchordockingdsgn.lpk] que se encuentra dentro de la carpeta
+ [design] de la ruta que abrirmos inicialmente.
+ Es decir que ahora el siguiente archivo que queremos abrir esta en la ruta
+ por defecto 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+C:
+\backslash
+lazarus
+\backslash
+components
+\backslash
+anchordocking
+\backslash
+design
+\end_layout
+
+\end_inset
+
+.
+ Seleccionamos el archivo y veremos la siguiente ventana
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Instalacion_Componente_Diseño.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Instalación del componente para diseño
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Buscamos el botón [Usar], luego [Instalar], aceptamos la [Advertencia] 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/Advertencia_2.png
+	width 7cm
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+esperamos a que Lazarus realice la instalación, se cierre y se vuelva a
+ abrir.
+\end_layout
+
+\end_deeper
+\begin_layout Chapter
+Variables
+\end_layout
+
+\begin_layout Chapter
+Estructuras de Programación
+\end_layout
+
+\begin_layout Chapter
+Procedimientos y Funciones
+\end_layout
+
+\begin_layout Chapter
+Programación Orientada a Objetos
+\end_layout
+
+\begin_layout Chapter
+Resolución de Problemas de Matemáticas
+\end_layout
+
+\end_body
+\end_document
