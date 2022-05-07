@@ -9,3 +9,4 @@ A continuación se presenta la lista de actualizaciones desde la mas reciente ha
 ### 6 de Mayo de 2022
 
 1. Se creo el documento de LATEX para escribir el curso.
+2. Se creo el capítulo 2 - Introducción a Lazarus Project Free Pascal
